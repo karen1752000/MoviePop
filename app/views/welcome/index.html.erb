@@ -1,10 +1,13 @@
-<h1>What's Playing</h1>
-
+<h1>Now Playing</h1>
+<%= @whatever %>
 
 <% @whatever.each do |w| %>
 
+<img src="https://image.tmdb.org/t/p/w400<%= w.poster_path %>">
+<img src="https://image.tmdb.org/t/p/w400<%= w.backdrop_path %>">
+
 <div><%= w.title %></div>
-<div><%= w.runtime %></div>
-
-
+<div><%= w.vote_average %></div>
+<div><%= w.overview %></div>
+	
 <% end %>
