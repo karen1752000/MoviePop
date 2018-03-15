@@ -9,9 +9,9 @@ Rails.application.routes.draw do
 
   resources :showtimes
 
-  root :to =>"users#show"
+  # root :to =>"users#show"
 
-  root :to =>"movies#show"
+  # root :to =>"movies#show"
 
 end
 
