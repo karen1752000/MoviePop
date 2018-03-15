@@ -14,6 +14,10 @@ end
   
   root "welcome#index"
 
+<<<<<<< HEAD
+  resources :users, :only =>[:show]
+=======
+>>>>>>> c436af60f0abaaceea800d81079b5d63b6b5dee0
 
   devise_for :users 
 
