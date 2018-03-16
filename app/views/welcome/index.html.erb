@@ -4,11 +4,13 @@
 
 <% @whatever.each do |w| %>
 
-<img src="https://image.tmdb.org/t/p/w200<%= w.poster_path %>">
-<!-- <img src="https://image.tmdb.org/t/p/w400<%= w.backdrop_path %>"> -->
-
-<div class="title"><%= w.title %></div>
-<div><%= w.vote_average %></div>
-<div><%= w.overview %></div>
+<div class="movie">
+	<!-- <img src="https://image.tmdb.org/t/p/w400<%= w.backdrop_path %>">
+ -->	<img src="https://image.tmdb.org/t/p/w200<%= w.poster_path %>">
+	 <div class="title"><%= w.title %></div><br>
 	
+	<div class="vote_average"><%= w.vote_average %></div>
+	
+	<div class="overview"><%= w.overview %></div> 
+</div>	
 <% end %>
