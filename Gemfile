@@ -35,7 +35,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'devise'
 gem 'themoviedb', '~> 1.0', '>= 1.0.1'
-gem 'dotenv-rails'
+# gem 'dotenv-rails'
+gem 'dotenv-rails', :groups => [:development, :test]
 # gem 'httparty', '~> 0.16.1'
 gem 'jquery-rails'
 
@@ -46,7 +47,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
-
+gem 'stripe'
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
