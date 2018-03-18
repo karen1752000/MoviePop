@@ -13,19 +13,5 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-//= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
 
-// window.onscroll = function() {myFunction()};
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }

@@ -1,16 +1,29 @@
+<title>MoviePop!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<body class="w3-light-grey">
+
+
 <header class="now playing">
-<h1>Now Playing</h1>
-</header>
+ 
+ 
 
 <% @whatever.each do |w| %>
 
 <div class="movie">
-	<!-- <img src="https://image.tmdb.org/t/p/w400<%= w.backdrop_path %>">
- -->	<img src="https://image.tmdb.org/t/p/w200<%= w.poster_path %>">
-	 <div class="title"><%= w.title %></div><br>
+	<!-- <img src="https://image.tmdb.org/t/p/w400<%= w.backdrop_path %>"> -->
+	<img src="https://image.tmdb.org/t/p/w200<%= w.poster_path %>"> 
+	 <div class="title"><%= w.title %></div><br> 
 	
 	<div class="vote_average"><%= w.vote_average %></div>
 	
 	<div class="overview"><%= w.overview %></div> 
 </div>	
 <% end %>
+ -->
+</body>

@@ -40,7 +40,6 @@ gem 'themoviedb', '~> 1.0', '>= 1.0.1'
 gem 'dotenv-rails'
 # gem 'httparty', '~> 0.16.1'
 gem 'jquery-rails'
-gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
