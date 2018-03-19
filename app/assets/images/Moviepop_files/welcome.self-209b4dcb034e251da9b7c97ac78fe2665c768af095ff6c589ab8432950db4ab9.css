@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto");
+/* line 9, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+body {
+  position: fixed;
+  background-color: #666;
+  padding: 10px;
+  font: 14px/20px "Roboto", sans-serif;
+}
+
+/* line 16, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+a, a:hover, a:visited, a:active, a:focus, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 21, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+section {
+  font: 16px/28px "Roboto";
+  padding: 0px 20px;
+}
+
+/* line 26, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+nav {
+  height: 52px;
+  position: relative;
+  background-color: #fc0;
+}
+@media screen and (min-width: 1200px) {
+  /* line 26, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+  nav {
+    padding: 0 20px;
+    padding-right: 58px;
+    padding-left: 160px;
+  }
+}
+
+/* line 38, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.menu-toggle {
+  display: none;
+}
+/* line 42, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.menu-toggle:checked ~ .collapse {
+  height: 300px;
+}
+/* line 45, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.menu-toggle:checked ~ .menu-toggle-ui:after {
+  transform: rotate(180deg);
+  color: #f30;
+}
+
+/* line 51, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.nav-logo {
+  margin-left: 52px;
+  padding-top: 10px;
+  font: 24px/32px "Lobster", sans-serif;
+  color: #000;
+}
+@media screen and (min-width: 1200px) {
+  /* line 51, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+  .nav-logo {
+    margin-left: 0;
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+}
+
+/* line 64, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.list-unstyled {
+  list-style: none;
+  padding-left: 800px;
+  margin: 0;
+}
+/* line 68, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.list-unstyled li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 75, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.main-menu li a {
+  display: block;
+  font-size: 1em;
+  padding: 0 1em;
+  background-color: #333;
+  color: #fff;
+  transition: 500ms background-color, 500ms color;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 86, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.main-menu li a:hover {
+  background-color: #fb0 !important;
+  color: #000;
+}
+/* line 92, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+.main-menu li:nth-child(even) a {
+  background-color: #393939;
+}
+@media screen and (min-width: 1200px) {
+  /* line 91, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+  .main-menu li {
+    display: inline-block;
+  }
+  /* line 97, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+  .main-menu li a, .main-menu li:nth-child(even) a {
+    background-color: transparent;
+    color: #333;
+    line-height: 52px;
+  }
+  /* line 102, /Users/KarenMitchell/Desktop/moviepop/app/assets/stylesheets/welcome.scss */
+  .main-menu li a:hover {
+    background-color: #fa0 !important;
+    color: #000;
+  }
+}
