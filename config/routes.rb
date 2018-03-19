@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  
-  root "welcome#index"
 
-  devise_for :users 
+	root "welcome#index"
+
 
     resources :users, only: [ :show, :edit, :update]
    resources :payments,  only: [:new, :create]
@@ -12,6 +11,16 @@ Rails.application.routes.draw do
  
 
 
+
+	 devise_for :users 
+  
+
+     resources :users, :only =>[:show]
+  
+ 
+ 
+
 end
   
   
+

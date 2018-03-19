@@ -1,0 +1,39 @@
+<div class="container">
+  <h1> MoviePop </h1>
+  <div class="pocket">
+    <h2>5 different excellent movies to pick from</h2>
+    <h3>Pick any theartre close to your house</h3>
+    <div class="movies">
+
+      <%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="The Best Movie Ticket Deals In Town!"
+          data-amount="500"
+          data-locale="auto"></script>
+
+          <% end %>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Store#index</h1>
+<p>Find me in app/views/store/index.html.erb</p> -->

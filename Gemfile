@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'stripe'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
@@ -39,6 +41,7 @@ gem 'themoviedb', '~> 1.0', '>= 1.0.1'
 gem 'dotenv-rails', :groups => [:development, :test]
 # gem 'httparty', '~> 0.16.1'
 gem 'jquery-rails'
+gem 'bootstrap', '~> 4.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
