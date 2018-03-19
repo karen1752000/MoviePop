@@ -4,12 +4,15 @@
     <title>Moviepop</title>
     <%= csrf_meta_tags %>
     <link type='stylesheet' src='assets/css/now-ui-kit.css'>
+   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <!-- NavBar -->
     <div class="container"> 
       <nav>
        <input type="checkbox" id="toggle1" class="menu-toggle">
@@ -31,24 +34,9 @@
             
     <div class="nav-logo"><a href='/'>MoviePop!</a></div>
   </nav>
-     
- <!--  <a href='/'><div class='logo'></div></a>   -->
- <style>
-    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-    body {font-family: "Open Sans"}
-  </style>
+     <!-- NavBar -->
 
 
-<!-- Image header -->
-  <header class="display-container wide" id="home">
-    <!-- <img class="image" src="infinity-war.jpg" alt="MoviePop" width="1600" height="1060"> -->
-    <div class="display-left padding-large">
-      <h1 class="text-white">MoviePop!</h1>
-      <h1 class="jumbo text-white hide-small"><b>Avengers Infintiy War</b></h1>
-      <h6><button class="button white padding-large large opacity hover-opacity-off" onclick="document.getElementById('Coming Soon').style.display='block'">Coming Soon</button></h6>
-    </div>
-  </header>
-  
   </body>
 </html>
 
