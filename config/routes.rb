@@ -11,6 +11,8 @@ Rails.application.routes.draw do
    resources :users, only: [ :show, :edit, :update]
    resources :payments
 
+   get 'thanks', to: "payments#thanks", as: 'thanks'
+
 end
   
   

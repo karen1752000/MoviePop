@@ -1,0 +1,37 @@
+<h1>Buy Tickets</h1>
+
+<!-- <h2>Choose Number Of Tickets</h2> -->
+<select>
+	<option value="" disabled selected>Please select a name...</option>
+  <option value="1">1</option>
+ <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+<br>
+<br>
+<%= form_tag payments_path do %>
+<article>
+	<% if flash[:error].present? %>
+		<div id="error_explanation">
+			<p><%= flash[:error] %></p>
+		</div>
+	<% end %>
+
+	<label class = "amount">
+		<span>Amount: $12.50</span>
+	</label>
+
+</article>
+
+<script src="https://checkout.stripe.com/checkout.js" class= "stripe-button"
+	data-key="<%= Rails.configuration.stripe[:publishable_key]%>"
+		data-description="Tickets"
+		data-amount="1250" 
+		data-email="<%= current_user.email %>"
+		data-bitcoin="true"
+		data-locale="auto"></script>
+
+<% end %>
