@@ -32,6 +32,22 @@
 
   <p> Moviepop will change your theartre experience like no other!</p>
 
+  <p><%= button_to "Register to access our amazing movie theartre ticket deals!", users_path, method: :post %></p>
+
+  <p>Did you already register with our website? <%= link_to "Log in", login_path %></p>
+
+  <% else %>
+
+  <%= form_for Task.new do |f| %>
+    <%= f.text_field :name %>
+    <%= f.submit "Add Task" %>
+    <% end %>
+
+
+    <% if @incomplete_tasks.empty? && @complete_tasks.empty? %>
+    <p>Curerently no tasks. Add one above.</p>
+    <% else %>
+
 
 
 
