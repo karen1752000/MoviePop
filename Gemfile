@@ -36,7 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
-gem 'themoviedb', '~> 1.0', '>= 1.0.1'
+gem 'themoviedb-api'
+# gem 'themoviedb', '~> 1.0', '>= 1.0.1'
 gem 'dotenv-rails'
 # gem 'httparty', '~> 0.16.1'
 gem 'jquery-rails'
