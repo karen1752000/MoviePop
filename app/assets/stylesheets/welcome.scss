@@ -7,7 +7,7 @@
 
 // NavBar
 body {
-  // background-color: #010C09;
+  background-color: #E73131;
   padding: 10px;
   font: 14px/20px "Roboto", sans-serif;
 }
@@ -23,7 +23,7 @@ section {
 }
 
 nav {
-  height: 52px;
+  height: 55px;
   position: relative;
   background-color: #fc0;
   	
@@ -161,7 +161,7 @@ nav {
 	  margin: 25px;
 	  font-family: 'Bungee';
 	  text-align: center;
-	  color: white;
+	  color: #000;
 	  
 	}
 	
@@ -206,7 +206,7 @@ h1 {
 	margin: 30px;
 	font-family: 'Bungee';
 	text-align: center;
-	color: white;
+	color: #000;
 }
 
 // Carousel
@@ -214,9 +214,10 @@ h1 {
 
 .carousel {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
-    height: 425px;
+    color: #000;
+    // box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 16px;
+    height: 415px;
 }
 
 .carousel-inner {
@@ -335,9 +336,11 @@ h1 {
 	background-color: 010C09;
 }
 
-// .btn{
-// 	background-color: #010C09;
-// }
+ .btn{
+	background-color: #fc0;
+	border: none;
+    outline:none;
+ }
 
 
 .ad{
@@ -346,6 +349,96 @@ h1 {
   padding-left: 50px;
 }
 
+// Login
+.login {
+	padding-right: 100px;
+}
 
 // footer
+
+#footer {
+	background-color: #fc0;
+	// padding-top: 15px;
+	padding-bottom: 50px;
+	position: relative;
+	height: 50px;
+	// margin-top: -100px;
+	clear: both;
+}
+
+	.fa {
+  	padding: 10px;
+  	float: right;
+  	font-size: 30px;
+  	width: 30px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin: 5px 2px;
+  	border-radius: 50%;
+	}
+
+	.fa:hover {
+    opacity: 0.7;
+}
+
+	.fa-facebook {
+	  background: #3B5998;
+	  color: white;
+	}
+
+	.fa-twitter {
+  	background: #55ACEE;
+  	color: white;
+	}
+
+	.fa-youtube {
+  	background: #bb0000;
+  	color: white;
+	}
+
+	.fa-instagram {
+  	background: #125688;
+  	color: white;
+	}
+.follow{
+		// margin-left: 52px;
+  		// padding-bottom: 0px;
+  		font: 30px/40px "Lobster", sans-serif;
+  		color: #000;
+  		@media screen and (min-width: 1200px){
+    	margin-left:0;
+    	position: absolute;
+    	left: 20px;
+    	top: 0;
+	}
+}
+
+.store {
+	width: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
