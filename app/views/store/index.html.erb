@@ -30,23 +30,27 @@
 
 <% if current_user.nil? %>
 
-  <p> Moviepop will change your theartre experience like no other!</p>
-
+  <p> Moviepop will change your theartre experience like no other site before us!</p>
+<!-- //I want to create a new user record, so I will go to the users path with a post action -->
   <p><%= button_to "Register to access our amazing movie theartre ticket deals!", users_path, method: :post %></p>
-
+<!-- //clear -->
   <p>Did you already register with our website? <%= link_to "Log in", login_path %></p>
 
   <% else %>
-
+<!-- //clear -->
   <%= form_for Task.new do |f| %>
     <%= f.text_field :name %>
     <%= f.submit "Add Task" %>
     <% end %>
 
-
+<!-- //clear -->
     <% if @incomplete_tasks.empty? && @complete_tasks.empty? %>
-    <p>Curerently no tasks. Add one above.</p>
+    <p>Curerently no tasks! Add one above!</p>
     <% else %>
+    <h2>Incomplete Tasks</h2>
+    <div class="tasks" id="incomplete_tasks">
+      <%= render @incomplete_tasks %>
+    </div>
 
 
 

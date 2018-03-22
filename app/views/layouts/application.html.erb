@@ -9,37 +9,23 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <!-- NavBar -->
-    <div class="container"> 
-      <nav>
-       <input type="checkbox" id="toggle1" class="menu-toggle">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-          <label for="toggle1" class="menu-toggle-ui"></label>
-          
-          <div class="collapse">
-            <ul class="main-menu list-unstyled">
-              <% if user_signed_in? %>
-                Logged in as <strong><%= current_user.email %></strong>.
-                <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |</li>
-                <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
-              <% else %>
-               <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li> 
-               <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
-              <% end %>
-            </ul>
+    <% if current_user %>
+    <%= link_to "Logout", destroy_user_session_path, method: :destroy
+    <% else %>
+    <%= link_to "Register", new_user_registration_path %>
+    <%= link_to "Login", new_user_session_path %>
+    <% end %>
+    <%= yield %>
 
-            
-    <div class="nav-logo"><a href='/'>MoviePop!</a></div>
-  </nav>
-     <!-- NavBar -->
-
-
+    <% if session[:source] %>
+    <p>Thanks for visiting our site! <%= session[:source] %></p>
+    <% end %>
   </body>
 </html>
-
-
-<%= yield%>
-
