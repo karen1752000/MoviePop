@@ -1,0 +1,42 @@
+<h1>Buy Tickets</h1>
+<h1>We Accept all major credit and debit cards!</h1>
+<h1>And Now BitCoin!</h1>
+
+
+
+
+<br>
+<br>
+<select>
+    <option value="Please Select A Showtime">Please Select A Showtime</option>
+  <option value="11:30 AM">11:30 AM</option>
+  <option value="2:00 PM">2:00 PM</option>
+  <option value="4:30 PM">4:30 PM</option>
+  <option value="7:00 PM">7:00 PM</option>
+  <option value="9:30 PM">9:30 PM</option>
+  <option value="12:00 AM">12:00 AM</option>
+  
+</select>
+<%= form_tag payments_path do %>
+<article>
+    <% if flash[:error].present? %>
+        <div id="error_explanation">
+            <p><%= flash[:error] %></p>
+        </div>
+    <% end %>
+
+    <label class = "amount">
+        <h2><span>Amount: $12.50</span></h2>
+    </label>
+</article>
+
+<script src="https://checkout.stripe.com/checkout.js" class= "stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-description="Tickets"
+        data-amount="1250"
+        data-locale="auto"
+        data-bitcoin="true">
+        </script>
+        
+
+<% end %>
