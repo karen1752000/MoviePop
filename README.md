@@ -1,24 +1,11 @@
-# README
+#MoviePop!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created movie theater website using Ruby on Rails 2.5.0.
 
-Things you may want to cover:
+Prerequisites: Devise gem to create Users. The Movie Database API, and Stripe API for payments. 
 
-* Ruby version
+Authors Karen Mitchell 
+		Sheila Waples
+		Andrew Gentile
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Acknowledgments guides.rubyonrails.org, The Movie Database API documentations, Stripe API documentations 
