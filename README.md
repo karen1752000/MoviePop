@@ -9,6 +9,8 @@ Pry-Rails: Vital in order to utilize CoffeeScript so coffee assets & values can 
 
 Turbolinks: Helped our page load faster because we were using different api's.
 
+Devise: Enabled this gem in order to build authentication solutions. 
+
 * Configuration
 
 * Database creation
