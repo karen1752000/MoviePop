@@ -16,7 +16,7 @@ class ChargesController < ApplicationController
     :description => '3 movie tickets for only 30$!',
     :currency    => 'usd'
   )
-// error handling code , we want to re-direct customer to the root part , our hmoe page is where we will display any errors
+// error handling code , we want to re-direct customer to the root part , our hmoe page is where we will display any errors.
 rescue Stripe::CardError => e
   flash[:error] = e.message
   redirect_to new_charge_path
