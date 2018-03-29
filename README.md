@@ -23,6 +23,8 @@ TZInfo-data: Contains data from the IANA Time Zone database.
 
 Sass-rails: Utilizing the uglifier gem as a compressor JavaScript assets.
 
+Uglifier: Ruby wrapper for uglifyjs JavaScript compressor.
+
 * Configuration
 
 * Database creation
