@@ -5,6 +5,8 @@
 Gems:
 Stripe: Used for mock payments.
 
+Pry-Rails: Vital in order to utilize CoffeeScript so coffee assets & values can render
+
 * Configuration
 
 * Database creation
