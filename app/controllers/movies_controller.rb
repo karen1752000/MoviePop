@@ -1,3 +1,4 @@
+# how we display all the movies the user wants all at the same time.
 class MoviesController < ApplicationController
 	def show
 		@movie =Movie.all
@@ -9,7 +10,7 @@ class MoviesController < ApplicationController
 
 private
 
-def movie_params 
+def movie_params
 	params.require(:movie).permit[:name, :genre, :year]
  end
 end
