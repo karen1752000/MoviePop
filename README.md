@@ -15,6 +15,8 @@ Themoviedb-api: This rendered movies that are currently out every time the user 
 
 Dotenv-rails: Enables rails to load environment variables from .env into ENV so it can go through the development.
 
+Bootstrap: The premier framework gem for CSS, Html & JavaScript.
+
 * Configuration
 
 * Database creation
