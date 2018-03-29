@@ -21,6 +21,8 @@ Byebug: Ruby Debugger recommended to use from class.
 
 TZInfo-data: Contains data from the IANA Time Zone database.
 
+Sass-rails: Utilizing the uglifier gem as a compressor JavaScript assets.
+
 * Configuration
 
 * Database creation
