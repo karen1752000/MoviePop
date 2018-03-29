@@ -2,7 +2,7 @@ class ChargesController < ApplicationController
   def create
 // we make two calls from the api....the one to charge the customer & also to create a new customer
 
-  # Amount in cents
+  # How we are going to charge the customers, and this amount is also in cents.
   @amount = 500
 
   customer = Stripe::Customer.create(
