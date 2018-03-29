@@ -13,6 +13,8 @@ Devise: Enabled this gem in order to build authentication solutions.
 
 Themoviedb-api: This rendered movies that are currently out every time the user would reload the page.
 
+Dotenv-rails: Enables rails to load environment variables from .env into ENV so it can go through the development.
+
 * Configuration
 
 * Database creation
