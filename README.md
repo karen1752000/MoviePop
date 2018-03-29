@@ -17,6 +17,8 @@ Dotenv-rails: Enables rails to load environment variables from .env into ENV so 
 
 Bootstrap: The premier framework gem for CSS, Html & JavaScript.
 
+Byebug: Ruby Debugger.
+
 * Configuration
 
 * Database creation
