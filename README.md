@@ -19,6 +19,8 @@ Bootstrap: The premier framework gem for CSS, Html & JavaScript.
 
 Byebug: Ruby Debugger recommended to use from class.
 
+TZInfo-data: Contains data from the IANA Time Zone database.
+
 * Configuration
 
 * Database creation
